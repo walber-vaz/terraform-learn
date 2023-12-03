@@ -10,7 +10,7 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-0885b1f6bd170450c"
+  ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
 
   tags = {
