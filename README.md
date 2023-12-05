@@ -21,6 +21,26 @@ terraform apply # Aplica as alterações
 terraform destroy # Destroi a infraestrutura
 ```
 
+## Variables em HCL
+
+Variable em HCL é uma variável que pode ser usada no terraform. Sendo que ela pode ser definida de duas formas:
+
+```bash
+variable "name" {
+  type = string
+  default = "value"
+}
+```
+
+```bash
+variable "name" {
+  type = string
+}
+```
+
+Sendo que ao colocar o nome da variável não pode ter esses nomes `source, version, providers, count, for_each, lifecycle, depends_on, local`. Pois são palavras reservadas do terraform.
+O default e força a variável a ter um valor padrão, caso não seja passado nenhum valor para ela.
+
 ## Providers
 
 Providers são os provedores de nuvem que o terraform suporta. Alguns exemplos são: AWS, Azure, GCP, Digital Ocean, etc.

@@ -13,7 +13,7 @@ resource "aws_instance" "web" {
   # Use the alias to select the provider
   # provider      = aws.primary_west
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = var.aws_ec2_instance_type
 
   tags = {
     Name = "terraform-hello-world"
