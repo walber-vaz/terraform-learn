@@ -12,13 +12,3 @@ terraform {
     region = "us-east-1"
   }
 }
-
-# alias multiple providers
-# provider "aws" {
-#   region = "us-west-2"
-#   alias  = "primary_west"
-# }
-
-provider "aws" {
-  region = var.aws_region
-}

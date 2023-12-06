@@ -1,3 +1,3 @@
 output "ip_address" {
-  value = aws_instance.web.private_ip
+  value = module.ec2_instance.ip_address
 }
