@@ -1,5 +1,4 @@
 variable "aws_region" {
-  # default e usado quando o valor da variável não é passado
   type        = string
   description = "AWS region to deploy to"
 
@@ -13,7 +12,6 @@ variable "aws_region" {
 }
 
 variable "aws_ec2_instance_type" {
-  # default e usado quando o valor da variável não é passado
   type        = string
   description = "AWS EC2 instance type"
 
@@ -24,4 +22,16 @@ variable "aws_ec2_instance_type" {
   }
 
   # sensitive = true # Isso faz com que o valor da variável não seja exibido no console
+}
+
+variable "ip_ssh_connection" {
+  type      = list(string)
+  sensitive = true
+}
+
+
+variable "aws_key_pair_name" {
+  type        = string
+  description = "AWS key pair name"
+  sensitive   = true
 }

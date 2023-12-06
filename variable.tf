@@ -5,3 +5,13 @@ variable "aws_region" {
 variable "aws_ec2_instance_type" {
   type = string
 }
+
+variable "ip_ssh_connection" {
+  type      = list(string)
+  sensitive = true
+}
+
+variable "aws_key_pair_name" {
+  type      = string
+  sensitive = true
+}

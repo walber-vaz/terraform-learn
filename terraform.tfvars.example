@@ -1,2 +1,4 @@
 aws_region = "value"
 aws_ec2_instance_type = "value"
+ip_ssh_connection = ["ip"]
+aws_key_pair_name = "key pair ssh"
