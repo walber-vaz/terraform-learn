@@ -83,6 +83,18 @@ resource "aws_instance" "example" {
 }
 ```
 
+## .tfvars
+
+O arquivo .tfvars é um arquivo que pode ser usado para passar variáveis para o terraform. Sendo que ele pode ser usado de duas formas:
+
+```bash
+variable_name = "value"
+```
+
+```bash
+variable_name = value
+```
+
 ## Referências
 
 - [Terraform](https://www.terraform.io/)

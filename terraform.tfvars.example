@@ -1,0 +1,2 @@
+aws_region = "value"
+aws_ec2_instance_type = "value"
