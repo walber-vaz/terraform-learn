@@ -35,3 +35,23 @@ variable "aws_key_pair_name" {
   description = "AWS key pair name"
   sensitive   = true
 }
+
+variable "name" {
+  type        = string
+  description = "Name of the EC2 instance"
+}
+
+variable "environment" {
+  type        = string
+  description = "Environment of the EC2 instance"
+}
+
+variable "project" {
+  type        = string
+  description = "Project of the EC2 instance"
+}
+
+variable "owner" {
+  type        = string
+  description = "Owner of the EC2 instance"
+}

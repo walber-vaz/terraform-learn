@@ -4,4 +4,8 @@ module "ec2_instance" {
   aws_region            = var.aws_region
   ip_ssh_connection     = var.ip_ssh_connection
   aws_key_pair_name     = var.aws_key_pair_name
+  name                  = var.name
+  environment           = var.environment
+  project               = var.project
+  owner                 = var.owner
 }

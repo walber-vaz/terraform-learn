@@ -26,4 +26,6 @@ resource "aws_security_group" "w2k_sg" {
     to_port     = 0
     protocol    = "-1"
   }
+
+  tags = local.common_tags
 }

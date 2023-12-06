@@ -4,7 +4,5 @@ resource "aws_instance" "web" {
   security_groups = [aws_security_group.w2k_sg.name]
   key_name        = aws_key_pair.w2k_ssh.key_name
 
-  tags = {
-    Name = "terraform-hello-world"
-  }
+  tags = local.common_tags
 }
