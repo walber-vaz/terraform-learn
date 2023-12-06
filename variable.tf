@@ -16,18 +16,6 @@ variable "aws_key_pair_name" {
   sensitive = true
 }
 
-variable "name" {
-  type = string
-}
-
-variable "environment" {
-  type = string
-}
-
-variable "project" {
-  type = string
-}
-
-variable "owner" {
-  type = string
+variable "common_tags" {
+  type = map(string)
 }
