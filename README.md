@@ -1,5 +1,15 @@
 # Estudos terraform
 
+## Docker run terraform
+
+```bash
+docker run -it -v $PWD:/app -w /app --entrypoint "" hashicorp/terraform:light sh
+
+# set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+```
+
 ## O que é terraform?
 
 Terraform é uma ferramenta de infraestrutura como código (IaC) que permite que você construa, altere e versione infraestrutura com segurança e eficiência. O Terraform pode gerenciar provedores de serviço existentes e populares, bem como soluções internas personalizadas.
